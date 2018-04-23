@@ -1,0 +1,43 @@
+Copyright (C) Luca Citi and Riccardo Barbieri, 2010-2011.
+All Rights Reserved.
+{lciti,barbieri}@neurostat.mit.edu
+http://users.neurostat.mit.edu/barbieri/pphrv
+
+Permission is hereby granted, free of charge, to any person obtaining
+a copy of this software, to use [*] it for academic purposes, subject
+to the following conditions:
+
+1. The software is provided "as is" without warranty, either expressed
+or implied, including, but not limited to, the warranty of correctness,
+fitness, intellectual property ownership, or anything else whatsoever.
+The licensee agrees that the use of the software is at their sole risk.
+In no event shall the copyright owners be liable for any direct,
+indirect or consequential damages however connected with the use of
+this software.
+
+2. Under no circumstances is this software to be distributed [*] or
+reproduced, in any manner, in its original or modified form,
+without the express prior written consent from the copyright owner.
+
+3. Do not, under any circumstances, remove copyright statements from
+the source files and keep a copy of this copyright notice in the
+same directory as the software.
+
+4. Any work making use of this software must explicitly acknowledge
+the copyright owners. In case of a scientific publication reporting
+the use of this software in its original or modified form, citation
+of a relevant paper authored by the copyright owners is the preferred
+form of acknowledgement.
+
+5. Permission to use or distribute this software for non-academic
+purposes, including but not limited to, commercial, medical, military
+purposes, is NOT granted. Such permission, where possible, may be
+obtained subject to the express prior written consent from the
+copyright owners.
+
+[*] 'Use' denotes any use, including but not limited to, downloading,
+copying, modification, compilation and execution of the software in
+its original or modified form.
+'Distribution' includes any distribution of the software and any
+derived works such as object files, executable programs and libraries.
+
