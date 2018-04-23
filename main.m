@@ -3,14 +3,14 @@ clear all; %#ok<CLALL>
 close all;
 
 %%
-data = load('rr_peaks_pp7-I.txt');
+data = load('D:\4th sem\Physiological Signal Processing\SWELL Dataset\Data\rr_peaks_pp7-N.txt');
 R = data; % series of times of R-events [s]
 n = 11;
 rss = zeros(n-1, 1);
 aic = zeros(n-1,1);
 
 %%
-for nparams = 2:n
+for nparams = 9:9
     [Thetap,Mu,Kappa,L,opt] = pplikel(R, nparams);
     Var = opt.meanRR.^3 ./ Kappa; % variance of an inverse Gaussian
     Var = 1e6 * Var; % from [s^2] to [ms^2]
@@ -22,6 +22,8 @@ for nparams = 2:n
     mu_final = [add_zeros mu_without_nan];
     rr_inter = [R(1); diff(R)];
     rr_inter = rr_inter(nan_length+1:end);
+    
+    mu_without_nan(mu_without_nan > 2) = rr_inter(mu_without_nan > 2);
     display(mean(mu_without_nan))
     display(mean(rr_inter))
     [KSdistance,Z] = ks_plot(R, L, opt.delta);
@@ -42,6 +44,10 @@ for nparams = 2:n
     legend('RR', 'First moment of IG distribution')
     xlabel('time [s]')
     ylabel('[ms]')
+    title('Mean RR of Subject 7 - I')
+    ax = gca;
+    ax.FontSize = 18;
+    %ax.Ylim = [0 1500];
 
 end
 [min_aic, index_aic] = min(aic);

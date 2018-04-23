@@ -77,5 +77,7 @@ if plt
     plot(ll, lin, 'b');
     xlim([0 1])
     ylim([0 1])
+    ax = gca;
+    ax.FontSize = 18;
 end
 
